@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 
+import { ScanbotSdkDemoService } from './views/scanbot-sdk-demo.service';
+
 import { IonicVue } from '@ionic/vue';
 
 /* Core CSS required for Ionic components to work properly */
@@ -29,4 +31,7 @@ const app = createApp(App)
   
 router.isReady().then(() => {
   app.mount('#app');
+
+  // initialize the Scanbot SDK
+  ScanbotSdkDemoService.initScanbotBarcodeSDK();
 });

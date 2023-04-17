@@ -14,15 +14,20 @@
       </ion-header>
 
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <ion-button @click="ScanbotSdkDemoService.startBarcodeQrCodeScanner()">
+          Scan Barcode
+        </ion-button>
+
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/vue';
+
+import { ScanbotSdkDemoService } from './scanbot-sdk-demo.service';
+
 </script>
 
 <style scoped>
