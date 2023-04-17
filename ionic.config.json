@@ -1,0 +1,7 @@
+{
+  "name": "samplevuejs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
